@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click</button>
+
+    <div style="width:300px;height: 400px;background: chartreuse; " id="box" >
+
+    </div>
+
+    <input type="text" id="inp">
+    <label id="er" style="display: none;">input field</label>
+    <input type="text" id="" >
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                //alert("button clicked")
+                $("#box").slideToggle()
+            })
+        
+
+        $("#btn").mouseenter(function(){
+            $(this).css({"background":"red"})
+        })
+        $("#btn").mouseleave(function(){
+            $(this).css({"background":"white"})
+        })
+        $("#btn").mou(function(){
+            $(this).css({"background":"white"})
+        })
+
+
+        $("#inp").blur(function(){
+            var text=$(this).value=val()
+            if(text.length<4){
+                //alert("not good")
+                $("#er").show()
+            }
+        })
+
+    })
+        
+    </script>
+</body>
+
+
+
+</html>

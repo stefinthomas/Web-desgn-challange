@@ -1,0 +1,28 @@
+.header{
+    width: 100%;
+    background: blue;
+    height: 120px;
+}
+.left-section{
+    width: 20%;
+    float: left;
+    height: 400px;
+    background: green;
+
+}
+.right-section{
+    width: 80%;
+    float: left;
+    height: 400px;
+    background: red;
+
+}
+.footer{
+    height: 150px;
+    width: 100%;
+    background: orange;
+    float: left;
+}
+/* .content{
+    width: 400px;
+} */
